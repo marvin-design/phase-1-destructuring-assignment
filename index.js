@@ -46,3 +46,59 @@ const nestedMuppet = {
 // 7. Use destructuring to assign all variables using the keys as the variable names
 
 // 8. Use destructuring to assign songs 2 and 4, and Kermit's job and partner
+// Animal sounds
+// Animal sounds
+const moo = "cow";
+const neigh = "horse";
+const baa = "sheep";
+const oink = "pig";
+const cluck = "chicken";
+
+// Animal names
+const bessie = "cow";
+const dolly = "sheep";
+const babe = "pig";
+const little = "chicken";
+
+// Animal colors
+const blackAndWhite = "cow";
+const black = "sheep";
+const pink = "pig";
+
+// Rainbow colors
+const rainbowColors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+const [red, orange, yellow, green, blue, indigo, violet] = rainbowColors;
+
+// Rainbow colors using initials
+const [r, o, y, g, b, ,v] = colors;
+
+// Indigo using indg
+const [, , , , ,indg, ,] = rainbowColors;
+
+// Muppet character
+const Muppet = {
+  muppetName: "Miss Piggy",
+  color: "pink",
+  song: "Never Before, Never Again",
+  job: "Cast member of The Muppet Show",
+  partner: "Kermit"
+};
+
+const { muppetName, color, song, job, partner } = muppet;
+
+// Nested destructuring for songs and Kermit's job and partner
+const muppetSongs = [
+  "The Muppet Show Theme",
+  "Moving Right Along",
+  "Rainbow Connection",
+  "I Hope That Something Better Comes Along"
+];
+
+const [song1, song2, song3, song4] = muppetSongs;
+
+const kermit = {
+  job: "Host of The Muppet Show",
+  partner: "Miss Piggy"
+};
+
+const { job: nestedJob, partner: nestedPartner } = kermit;
